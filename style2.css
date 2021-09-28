@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+
+.header {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #80ffdb;
+    padding: 10px 1%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.navbar ul {
+    list-style: none;
+    font-weight: bolder;
+    font-family: Courier, monospace, 'Courier New';
+    font-size: 18px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 9px 10px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.navbar ul li:hover {
+    background-color: #72efdd;
+}
+
+.active {
+    background-color: #72efdd;
+}
+
+.cButton {
+    visibility: hidden;
+    font-weight: bolder;
+    border: none;
+    border-radius: 50px;
+    padding: 9px 25px;
+    background-color: #48bfe3;
+    transition: all 0.3s ease 0s;
+}
+
+.cButton:hover {
+    box-shadow: inset rgba(128, 128, 128, 0.671) 20px 0px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 88vh;
+    z-index: 10;
+/* border: 20px solid bisque; */
+background: linear-gradient(rgba(0, 238, 255, 0.178), rgba(0, 238, 255, 0.74));
+}
+
+.form label{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.form input{
+    border: 2px solid blue;
+    transition: all 0.3s ease 0s;
+    outline: none;
+    margin-bottom: 5px;
+    background-color: transparent;
+}
+.form input:focus{
+    transform: scale(1.2);
+} 
+
+button{
+    border: 0;
+    border-radius: 50px;
+    padding: 9px 20px;
+    background-color: rgba(0, 0, 255, 0.445);
+    margin-top: 5px;
+    transition: all 1s ease 0s;
+
+}
+
+.sbutton:hover{
+    box-shadow: inset rgba(128, 128, 128, 0.671) 90px 0px;
+    color: white;
+}
+textarea{
+    background-color: transparent;
+    border: 2px solid blue;
+    outline: none;
+    resize: none;
+}
+.gotop{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 10000;
+}
