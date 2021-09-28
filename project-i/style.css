@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4895ef;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #80ffdb;
+    padding: 10px 1%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.navbar ul {
+    list-style: none;
+    font-weight: bolder;
+    font-family: Courier, monospace, 'Courier New';
+    font-size: 18px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 9px 10px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+.about{
+    transition: all 0.3s ease 0s;
+    
+}
+a {
+    text-decoration: none;
+}
+
+.navbar ul li:hover {
+    background-color: #72efdd;
+}
+
+.active {
+    background-color: #72efdd;
+}
+
+.cButton {
+    font-weight: bolder;
+    border: none;
+    border-radius: 50px;
+    padding: 9px 25px;
+    background-color: #48bfe3;
+    transition: all 0.3s ease 0s;
+}
+
+.cButton:hover {
+    box-shadow: inset rgba(128, 128, 128, 0.671) 20px 0px;
+}
+
+.hero-section {
+    width: 100%;
+    height: 50vh;
+    background-image: url(https://image.shutterstock.com/z/stock-vector-men-s-t-shirt-realistic-mockup-in-different-colors-vector-illustration-1145908190.jpg);
+    background-position: top;
+    background-size: cover;
+    color: white;
+    margin-bottom: 4%;
+}
+
+.section-1 {
+    text-align: center;
+    margin: auto;
+    background-color: #80ffdba6;
+    width: 80%;
+}
+
+.section-1 h1 {
+    background-color: #e63946;
+    display: inline-block;
+    padding: 7px 12px;
+    border: 2px solid black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    overflow: visible;
+    width: 80%;
+    margin: auto;
+    padding: 6px;
+    z-index: 100;
+    border: 4px solid white;
+}
+
+.card {
+    width: 20%;
+    transition: all 0.3s ease 0s;
+    
+}
+
+.card-img {
+    width: 100%;
+    height: 80%;
+}
+.margin{
+    margin: 4% 0;
+}
+
+.card-txt {
+    height: 20%;
+    background-color: aquamarine;
+    
+}
+.card:hover{
+    transform: scale(1.1);
+    /* border: 2px solid white; */
+    background-color: white;
+}
+footer{
+    width: 100%;
+    /* height: 10vh; */
+    background-color: aqua;
+}
+.gotop{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 10000;
+    background-color: white;
+}
+.links{
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 580px){
+    .header{
+        flex-direction: column;
+    }
+    .logo{
+        margin-bottom: 8px;
+    }
+    .navbar ul li{
+        padding: 8px 0;
+        margin-bottom: 8px;
+
+    }
+    .cButton{
+        padding: 5px 15px;
+    }
+    .section-1 h1{
+        padding: 0 11px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+}
